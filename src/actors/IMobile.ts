@@ -1,4 +1,4 @@
 export default interface IMobile {
-    position: paper.Point;
-    velocity: paper.Point;
+    Position: paper.Point;
+    Velocity: paper.Point;
 }
