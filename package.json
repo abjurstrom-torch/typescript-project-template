@@ -1,0 +1,35 @@
+{
+  "name": "randmind",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write \"./src/**/*.ts\" \"./test/**/*.ts\"",
+    "test": "ava",
+    "build": "tsc -p ."
+  },
+  "devDependencies": {
+    "@ava/typescript": "^1.1.1",
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "@typescript-eslint/parser": "^4.10.0",
+    "ava": "^3.14.0",
+    "eslint": "^7.15.0",
+    "prettier": "^2.2.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "paper": "^0.12.11"
+  },
+  "ava": {
+    "require": [
+      "ts-node/register"
+    ],
+    "typescript": {
+      "rewritePaths": {
+        "src/": "build/"
+      }
+    }
+  }
+}

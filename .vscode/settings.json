@@ -1,0 +1,16 @@
+{
+    "launch": {
+
+        "configurations": [],
+        "compounds": []
+    },
+    // On save, run both fixAll and organizeImports source actions
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.organizeImports": true,
+    },
+    "typescript.referencesCodeLens.enabled": true,
+    "typescript.suggest.enabled": true,
+    "typescript.suggest.autoImports": true,
+    "typescript.implementationsCodeLens.enabled": true
+}
